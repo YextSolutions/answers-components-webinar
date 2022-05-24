@@ -13,10 +13,12 @@ export const BeverageCard = ({ result }: BeverageCardProps): JSX.Element => {
 
   return (
     <div className="flex flex-col border-4 border-transparent px-4 py-4 hover:border-toast-orange">
-      <div className="flex flex-col items-center">{/* Image */}</div>
+      <div className="flex flex-col items-center">
+        {/* image placeholder */}
+      </div>
       <div className="flex flex-col">
-        {/* name */}
-        {/* price & rating */}
+        {/* beverage name */}
+        {/* beverage rating and image */}
       </div>
     </div>
   );

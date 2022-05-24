@@ -5,7 +5,7 @@ interface StarRatingProps {
   rating: string;
 }
 
-export const StarRating = ({ rating }: StarRatingProps) => {
+export const StarRating = ({ rating }: StarRatingProps): JSX.Element => {
   const [numStars, setNumStars] = useState([0, 0]);
 
   useEffect(() => {

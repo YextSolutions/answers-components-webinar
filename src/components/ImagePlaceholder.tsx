@@ -12,7 +12,7 @@ export const ImagePlaceholder = ({
   placeholder,
   alt,
   imgCssClasses,
-}: ImagePlaceholderProps) => {
+}: ImagePlaceholderProps): JSX.Element => {
   const [loaded, setLoaded] = useState(false);
 
   return (
