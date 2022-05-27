@@ -66,7 +66,16 @@ export const Header = (): JSX.Element => {
           hidden: !overlayState.searchOverlay.open,
         })}
       >
-        {/* Search Bar */}
+        <SearchBar
+          customCssClasses={{
+            container: `md:h-12 mt-6 sm:my-6`,
+            inputContainer:
+              "inline-flex items-center justify-between w-full rounded-3xl border border-black",
+            logoContainer: "w-7 mx-2.5 my-2 ",
+          }}
+          placeholder="Search beer, wine, liqour "
+          onSearch={handleSearch}
+        />
       </div>
     </div>
   );

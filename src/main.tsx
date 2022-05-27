@@ -1,11 +1,18 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import App from "./App";
 import "./index.css";
+import App from "./App";
+import { AnswersHeadlessProvider } from "@yext/answers-headless-react";
+import { answersHeadlessConfig } from "./config/answersHeadlessConfig";
+import { OverlayProvider } from "./providers/OverlayProvider";
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <AnswersHeadlessProvider {...answersHeadlessConfig}>
+    <React.StrictMode>
+      <OverlayProvider>
+        <App />
+      </OverlayProvider>
+    </React.StrictMode>
+  </AnswersHeadlessProvider>,
   document.getElementById("root")
 );
